@@ -22,7 +22,7 @@ class SultanBot(BotPlugin):
     """
     Get the uptime from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -36,7 +36,7 @@ class SultanBot(BotPlugin):
     """
     Get the tail dmesg from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -50,7 +50,7 @@ class SultanBot(BotPlugin):
     """
     Get the monit status from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -64,7 +64,7 @@ class SultanBot(BotPlugin):
     """
     Get the passenger status from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -79,7 +79,7 @@ class SultanBot(BotPlugin):
     """
     Get the mount points from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -94,7 +94,7 @@ class SultanBot(BotPlugin):
     """
     Get the disk usage from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -108,7 +108,7 @@ class SultanBot(BotPlugin):
     """
     Get the memory usage from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -122,7 +122,7 @@ class SultanBot(BotPlugin):
     """
     Get the top memory hoggers from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
@@ -136,7 +136,7 @@ class SultanBot(BotPlugin):
     """
     Get the top CPU hoggers from the host
     """
-    self.username = self.config['username']
+    username = self.config['username']
     if not hostname:
       return 'Sultan will only respond, if you provide a hostname'
     
