@@ -1,0 +1,9 @@
+[Core]
+Name = Sultan
+Module = sultan
+
+[Documentation]
+Description = Running some key remote command
+
+[Python]
+Version = 3
