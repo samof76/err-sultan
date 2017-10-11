@@ -4,12 +4,6 @@ Sultan is an errbot plugin to, to get information from a host on cetain aspects 
 
 Please note all these bot commands are read only commands, and do not really harm the system in anyway.
 
-Also you will might want to configure the plugin, to use a specific user(to SSH), by default it is `root`, you could change this using the following command.
-
-```
-!plugin config Sultan {'username': 'samof76'}
-```
-
 ### Installation
 
 As Errbot admin for your Chat client tell errbot to install sultan,
@@ -20,6 +14,11 @@ As Errbot admin for your Chat client tell errbot to install sultan,
 
 For all the commands to work, you would have setup your(errbot installation) `~/.ssh/config`, in such a way that you each of the `<hostname>` in defined with their connection parameters.
 
+Also you will might want to configure the plugin, to use a specific user(to SSH), by default it is `root`, you could change this using the following command.
+
+```
+!plugin config Sultan {'username': 'samof76'}
+```
 ### Usage
 
 Sultan comes with the following bot commands prebuilt into it. 
