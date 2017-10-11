@@ -158,3 +158,31 @@ class SultanBot(BotPlugin):
       rtn = s.sudo('ps -eo pid,ppid,cmd,%mem,%cpu --sort -%cpu | head').run()
     
     return "/code {}".format("\n".join(rtn.stdout))
+
+  @arg_botcmd('hostname', type=str)
+  def sultan_get_w(self, msg, hostname=None):
+    """
+    Get currently logged in users and their processes
+    """
+    username = self.config['username']
+    if not hostname:
+      return 'Sultan will only respond, if you provide a hostname'
+    
+    with Sultan.load(hostname=hostname,user=username) as s:
+      rtn = s.sudo('w').run()
+    
+    return "/code {}".format("\n".join(rtn.stdout))
+
+  @arg_botcmd('hostname', type=str)
+  def sultan_get_last(self, msg, hostname=None):
+    """
+    Get user activity on the system
+    """
+    username = self.config['username']
+    if not hostname:
+      return 'Sultan will only respond, if you provide a hostname'
+    
+    with Sultan.load(hostname=hostname,user=username) as s:
+      rtn = s.sudo('last').run()
+    
+    return "/code {}".format("\n".join(rtn.stdout))
