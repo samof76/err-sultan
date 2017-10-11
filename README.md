@@ -52,6 +52,13 @@ This command will run `sudo free -m` on `<hostname>`, prints the output for you.
 ```
 This command will run `sudo monit status` on `<hostname>`, prints the output for you.
 
+#### Get Monit Summary
+
+```
+!sultan_get_monit_summary [-h] hostname
+```
+This command will run `sudo monit summary` on `<hostname>`, prints the output for you.
+
 #### Get Mount Points
 
 ```

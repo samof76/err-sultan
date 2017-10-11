@@ -60,6 +60,20 @@ class SultanBot(BotPlugin):
     return "/code {}".format("\n".join(rtn.stdout))
 
   @arg_botcmd('hostname', type=str)
+  def sultan_get_monit_summary(self, msg, hostname=None):
+    """
+    Get the monit status from the host
+    """
+    username = self.config['username']
+    if not hostname:
+      return 'Sultan will only respond, if you provide a hostname'
+    
+    with Sultan.load(hostname=hostname,user=username) as s:
+      rtn = s.sudo('monit summary').run()
+    
+    return "/code {}".format("\n".join(rtn.stdout))
+
+  @arg_botcmd('hostname', type=str)
   def sultan_get_passenger_status(self, msg, hostname=None):
     """
     Get the passenger status from the host
