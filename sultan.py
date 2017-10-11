@@ -62,7 +62,7 @@ class SultanBot(BotPlugin):
   @arg_botcmd('hostname', type=str)
   def sultan_get_monit_summary(self, msg, hostname=None):
     """
-    Get the monit status from the host
+    Get the monit summary from the host
     """
     username = self.config['username']
     if not hostname:
