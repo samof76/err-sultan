@@ -86,18 +86,3 @@ This command will run `sudo ps -eo pid,ppid,cmd,%mem,%cpu --sort -%cpu | head` o
 ```
 This command will run the `sudo ps -eo pid,ppid,cmd,%mem,%cpu --sort -rss | head` on `<hostname>`, prints the output for you.
 
-
-#### Get Currently logged in and their process
-
-```
-!sultan_get_w [-h] hostname
-```
-This command will run the `sudo w` on `<hostname>`, prints the output for you.
-
-
-#### Get User Activity on the System
-
-```
-!sultan_get_last [-h] hostname
-```
-This command will run the `sudo last` on `<hostname>`, prints the output for you.
